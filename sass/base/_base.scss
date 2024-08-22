@@ -1,0 +1,23 @@
+/* The universal selector "*" applies all settings to all elements */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* HMTL is the root element */
+html {
+    font-size: 62.5%;
+    /* Setting the ROOT FONT-SIZE to 10. This allows us to use REM units for relative values,
+   considering that the browser's default root font-size is 16px.
+   Using percentages, the best practice is to set it as 62.5% (10/16), which effectively keeps our root font-size at 10px. */
+
+}
+
+/* Everything related to the project's fonts should be applied to the BODY selector */
+body {
+    box-sizing: border-box;
+    /* Sets fixed width and height, regardless of padding and other properties */
+}
